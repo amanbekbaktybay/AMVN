@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <link  rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Newsreader:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ <header class="header wow animate__animated animate__fadeInDown">
+
+            <div class="logo" onclick="location.reload();">AMVN</div>
+
+            <div class="header__nav">
+                <ul class="header__nav-list">
+                    <li>
+                        <a href="#home" class="header__nav-link">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#about__me" class="header__nav-link">ABOUT ME</a>
+                    </li>
+
+                    <li>
+                        <a href="#my__works" class="header__nav-link">MY WORKS</a>
+                    </li>
+                    <li>
+                        <a href="#contacts" class="header__nav-link">CONTACTS</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="header__nav-burger" id="burger">
+                <ul class="header__nav-list-burger">
+                    <li>
+                        <a href="#home" class="header__nav-link">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#about__me" class="header__nav-link">ABOUT ME</a>
+                    </li>
+
+                    <li>
+                        <a href="#my__works" class="header__nav-link">MY WORKS</a>
+                    </li>
+                    <li>
+                        <a href="#contacts" class="header__nav-link">CONTACTS</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="disabled-area"></div>
+
+            <div class="header__burger-icon" onclick="showBurger();">
+                &#8801;
+            </div>
+
+        </header>
+
+    <div class="home" id="home">
+        <div class="home__content">
+            <div class="home__img-scroll-down">
+                <h1 class="main-title wow animate__animated animate__bounceInLeft">Welcome to my own Website</h1>
+                <img class="down wow animate__animated animate__fadeInDownBig" src="image/down-small.png" alt="">
+            </div>
+            <div class="home__img">
+                <img src="image/prevwie-good.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="about__me" id="about__me">
+        <div class="me__text">
+            <div class="text">
+                <img src="image/unicorn (1).png"  alt="" class="about-unicorn wow animate__animated animate__rubberBand">
+                <h2 class="me__title  wow animate__animated animate__fadeInLeftBig">I'm Amanbek</h2>
+                <p class="me__lorem  wow animate__animated animate__fadeInLeftBig">
+                    I'm studying front-end development and trying to make money in this area. <br>
+                    I will continue developing my skills in the IT field.
+                </p>
+            </div>
+
+            <div class="me__skills">
+                <h2 class="me__skills-title wow animate__animated animate__fadeInLeftBig">My skills</h2>
+                <div class="me__skills-wrapper">
+                    <span class="java skills-icon  wow animate__animated animate__swing" >Java<img src="image/java.png" alt=""></span>
+                    <span class="HTML skills-icon wow animate__animated animate__swing">HTML<img id="html" src="image/html-5.png" alt=""></span>
+                    <span class="CSS skills-icon wow animate__animated animate__swing">CSS<img id="css" src="image/css (1).png" alt=""></span>
+                    <span class="JS skills-icon wow animate__animated animate__swing">Java Script<img id="jsImg" src="image/java-script.png" alt=""></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="me__img wow animate__animated animate__rotateIn">
+
+        </div>
+    </div>
+
+    <div class="my__works" id="my__works">
+
+        <div class="works__title  wow animate__animated animate__fadeInUp">It's my Works</div>
+
+                <div class="work one"></div>
+                <div class="work two"></div>
+                <div class="work three"></div>
+                <div class="work four"></div>
+                <div class="work five"></div>
+                <div class="work six"></div>
+    </div>
+
+    <div class="contacts" id="contacts">
+            <div class="contacts__me">
+                <div class="my-mail"4>
+                    <h2 class="contacts-text my-email">EMAIL</h2>
+                    <p class="contacts-text">baktibai180403@gmail.com</p>
+                </div>
+
+                <div class="my-location">
+                    <h2 class="contacts-text my-location">LOCATION</h2>
+                    <p class="contacts-text">Aktau,Kazakhstan</p>
+                </div>
+            </div>
+
+            <div class="contacts__message">
+                <div >
+                     <span class="contacts__users-data-span" >
+                        <label class="contacts__label" for="email">your@gmail.com</label><br>
+                        <input id="email" type="text" class="input txt"> <br>
+                     </span>
+
+                    <span class="contacts__users-data-span">
+                        <label class="contacts__label" for="name">name</label><br>
+                        <input id="name" type="text" class="input txt"> <br>
+                    </span>
+                </div>
+
+
+                <label class="contacts__label" for="text-area">Your message</label><br>
+                <textarea class="text-area txt" name="" id="text-area" cols="30" rows="10"></textarea>
+            </div>
+
+    </div>
+
+
+
+    <footer class="footer">
+
+    </footer>
+
+ <script src="index.js"></script>
+</body>
+
+</html>
